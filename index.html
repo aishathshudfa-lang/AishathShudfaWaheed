@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Professional profile of Aishath Shudfa Waheed, Lecturer at the Faculty of Hospitality and Tourism Studies, Maldives National University.">
+  <title>Aishath Shudfa Waheed | Professional Profile</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #526079;
+      --page: #f4f7fb;
+      --surface: #ffffff;
+      --primary: #173a5e;
+      --primary-dark: #102a46;
+      --accent: #f2bd4f;
+      --line: #d7dfeb;
+      --focus: #d97706;
+      --radius: 14px;
+      --shadow: 0 14px 34px rgba(16, 42, 70, .10);
+      --max: 70rem;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      line-height: 1.65;
+    }
+    a { color: var(--primary); text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: .16em; }
+    a:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; border-radius: 3px; }
+    h1, h2, h3 { line-height: 1.18; margin-top: 0; }
+    h1 { max-width: 13ch; margin-bottom: .5rem; font-size: clamp(2.4rem, 6vw, 4.8rem); letter-spacing: -.04em; }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); color: var(--primary-dark); }
+    h3 { margin-bottom: .45rem; font-size: 1.15rem; color: var(--primary-dark); }
+    p { margin-top: 0; }
+    .container { width: min(calc(100% - 2rem), var(--max)); margin-inline: auto; }
+    .skip-link { position: fixed; z-index: 20; top: .75rem; left: .75rem; padding: .7rem 1rem; color: #fff; background: #000; transform: translateY(-180%); }
+    .skip-link:focus { transform: translateY(0); }
+
+    .site-header { color: #fff; background: var(--primary-dark); border-bottom: 4px solid var(--accent); }
+    .site-header-inner { min-height: 4.6rem; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+    .brand { display: grid; width: 2.7rem; height: 2.7rem; place-items: center; color: var(--primary-dark); background: var(--accent); border-radius: 8px; font-weight: 800; text-decoration: none; }
+    nav ul { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .35rem 1.1rem; margin: 0; padding: 0; list-style: none; }
+    nav a { color: #fff; font-weight: 700; text-decoration: none; }
+
+    main:focus { outline: none; }
+    .hero { color: #fff; background: linear-gradient(135deg, var(--primary-dark), var(--primary)); }
+    .hero-grid { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(16rem, .55fr); gap: 3rem; align-items: center; padding-block: clamp(3.5rem, 8vw, 6.5rem); }
+    .eyebrow { margin-bottom: .75rem; font-size: .8rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .eyebrow { color: var(--primary); }
+    .hero .eyebrow, .contact-panel .eyebrow { color: var(--accent); }
+    .role { margin-bottom: 1rem; font-size: clamp(1.15rem, 3vw, 1.5rem); font-weight: 700; }
+    .intro { max-width: 42rem; color: #e4edf7; font-size: 1.08rem; }
+    .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: 1.6rem; }
+    .button { display: inline-flex; align-items: center; justify-content: center; min-height: 2.8rem; padding: .65rem 1rem; border: 2px solid var(--accent); border-radius: 8px; font-weight: 800; text-decoration: none; }
+    .button-primary { color: var(--primary-dark); background: var(--accent); }
+    .button-secondary { color: #fff; background: transparent; }
+    .availability-note { display: inline-block; padding: .55rem .75rem; color: #dce8f4; background: rgba(255, 255, 255, .08); border-left: 4px solid var(--accent); }
+    .profile-card { padding: 1.5rem; color: var(--ink); background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); }
+    .profile-photo { width: 9rem; height: 9rem; margin-inline: auto; border: 5px solid #e0e8f1; border-radius: 50%; object-fit: cover; object-position: top; }
+    .facts { display: grid; gap: .7rem; margin: 1.25rem 0 0; padding: 0; list-style: none; }
+    .facts strong { display: block; color: var(--primary-dark); }
+
+    .content-section { padding-block: clamp(3.2rem, 7vw, 5rem); scroll-margin-top: 1rem; }
+    .content-section + .content-section { border-top: 1px solid var(--line); }
+    .section-heading { max-width: 46rem; margin-bottom: 2rem; }
+    .section-heading p { color: var(--muted); }
+    .two-column, .card-grid, .resource-list { display: grid; gap: 1rem; }
+    .two-column { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .resource-list { grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
+    .card, .resource-list li { padding: 1.35rem; background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--primary); border-radius: var(--radius); box-shadow: 0 8px 22px rgba(16, 42, 70, .05); }
+    .card p, .resource-list p { margin-bottom: 0; color: var(--muted); }
+    .tag-list { display: flex; flex-wrap: wrap; gap: .55rem; margin: 1.4rem 0 0; padding: 0; list-style: none; }
+    .tag-list li { padding: .35rem .7rem; color: var(--primary-dark); background: #e6edf5; border-radius: 999px; font-weight: 700; }
+    .contact-panel { display: grid; grid-template-columns: 1.3fr .7fr; gap: 2rem; align-items: center; padding: clamp(1.5rem, 5vw, 2.6rem); color: #fff; background: var(--primary-dark); border-radius: var(--radius); }
+    .contact-panel h2 { color: #fff; }
+    .contact-panel p { color: #dce8f4; }
+    address { font-style: normal; }
+    address a { color: #fff; font-weight: 800; }
+    .site-footer { padding-block: 2rem; color: #dce8f4; background: #0b2035; }
+    .site-footer p { margin: 0; }
+
+    @media (max-width: 48rem) {
+      html { scroll-behavior: auto; }
+      .site-header-inner { align-items: flex-start; flex-direction: column; padding-block: .85rem; }
+      nav ul { justify-content: flex-start; }
+      .hero-grid, .two-column, .card-grid, .resource-list, .contact-panel { grid-template-columns: 1fr; }
+      .hero-grid { gap: 2rem; }
+      .profile-card { max-width: 26rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container site-header-inner">
+      <a class="brand" href="#top" aria-label="Aishath Shudfa Waheed profile home">ASW</a>
+      <nav aria-label="Primary navigation">
+        <ul>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#teaching-areas">Teaching Areas</a></li>
+          <li><a href="#teaching-philosophy">Teaching Philosophy</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#culinary-projects">Culinary Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+    <section class="hero" id="top" aria-labelledby="profile-name">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Professional profile</p>
+          <h1 id="profile-name">Aishath Shudfa Waheed</h1>
+          <p class="role">Lecturer</p>
+          <p class="intro">Lecturer and culinary professional with expertise in culinary arts, food and beverage, baking and patisserie, and hospitality education.</p>
+          <div class="actions">
+            <a class="button button-primary" href="#teaching-areas">Explore teaching areas</a>
+            <a class="button button-secondary" href="mailto:Aishath.shudfa@mnu.edu.mv">Contact me</a>
+          </div>
+        </div>
+
+        <aside class="profile-card" aria-label="Profile summary">
+          <img class="profile-photo" src="profile.jpg" alt="Portrait of Aishath Shudfa Waheed">
+          <ul class="facts">
+            <li><strong>Role</strong>Lecturer</li>
+            <li><strong>Institution</strong>Faculty of Hospitality and Tourism Studies, Maldives National University</li>
+            <li><strong>Focus</strong>Culinary Arts, Food and Beverage, Hospitality Education, Patisserie and Baking</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="content-section" id="introduction" aria-labelledby="introduction-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Professional summary</p>
+          <h2 id="introduction-title">Introduction</h2>
+          <p>Lecturer at the Faculty of Hospitality and Tourism Studies, Maldives National University, specialising in culinary arts, food and beverage, baking and patisserie.</p>
+        </div>
+        <div class="two-column">
+          <article class="card">
+            <h3>Culinary practice</h3>
+            <p>Experienced in culinary practice.</p>
+          </article>
+          <article class="card">
+            <h3>Hospitality education</h3>
+            <p>Experienced in hospitality education.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="teaching-areas" aria-labelledby="teaching-areas-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching</p>
+          <h2 id="teaching-areas-title">Teaching Areas and Subjects</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Culinary Arts</h3>
+            <p>Culinary Arts and International Cuisine</p>
+          </article>
+          <article class="card">
+            <h3>Baking and Patisserie</h3>
+            <p>Baking, Cakes and Patisserie</p>
+          </article>
+          <article class="card">
+            <h3>Hospitality Subjects</h3>
+            <p>Food Safety, Menu Planning, and Food and Beverage</p>
+          </article>
+        </div>
+        <ul class="tag-list" aria-label="Educational and learning resources">
+          <li>Recipes</li>
+          <li>Practical guides</li>
+          <li>Food-safety materials</li>
+          <li>Culinary techniques</li>
+          <li>Baking resources</li>
+          <li>Hospitality learning materials</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="content-section" id="teaching-philosophy" aria-labelledby="teaching-philosophy-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Teaching philosophy</p>
+          <h2 id="teaching-philosophy-title">How I Support Learning</h2>
+          <p>My teaching focuses on practical, hands-on learning.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Practical Learning</h3>
+            <p>Focuses on practical, hands-on learning.</p>
+          </article>
+          <article class="card">
+            <h3>Industry Practice</h3>
+            <p>Connects classroom knowledge with real hospitality-industry practices.</p>
+          </article>
+          <article class="card">
+            <h3>Professional Skills</h3>
+            <p>Encourages creativity, confidence, and professional skills among learners.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Professional experience</p>
+          <h2 id="experience-title">Professional Experience and Achievements</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Education</h3>
+            <p>Experienced in culinary and hospitality education.</p>
+          </article>
+          <article class="card">
+            <h3>Events and Production</h3>
+            <p>Involved in culinary events, institutional functions, and large-scale food production.</p>
+          </article>
+          <article class="card">
+            <h3>Menu and Recipe Development</h3>
+            <p>Experienced in developing menus, recipes, and culinary concepts.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section" id="culinary-projects" aria-labelledby="culinary-projects-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Professional work</p>
+          <h2 id="culinary-projects-title">Culinary Projects and Professional Work</h2>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Menu and Recipe Development</h3>
+            <p>Experienced in menu and recipe development for culinary and hospitality projects.</p>
+          </article>
+          <article class="card">
+            <h3>University Events</h3>
+            <p>Involved in planning and producing food for university events and special functions.</p>
+          </article>
+          <article class="card">
+            <h3>Consultancy and Product Development</h3>
+            <p>Experienced in culinary consultancy, food presentation, and product development.</p>
+          </article>
+        </div>
+
+        <div class="contact-panel">
+          <div>
+            <p class="eyebrow">Professional contact</p>
+            <h2>Contact and Support</h2>
+            <p>Learners may contact me by email or speak with me during class or consultation hours for academic guidance and support. Consultations may be arranged during agreed consultation hours.</p>
+          </div>
+          <address>
+            <p><a href="mailto:Aishath.shudfa@mnu.edu.mv">Aishath.shudfa@mnu.edu.mv</a></p>
+            <a class="availability-note" href="cv.pdf">View professional CV</a>
+          </address>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Aishath Shudfa Waheed · Faculty of Hospitality and Tourism Studies, Maldives National University</p>
+    </div>
+  </footer>
+</body>
+</html>
